@@ -65,14 +65,16 @@ def main():
             print("\n")
             print("        [01] vim curl wget git unzip unrar一键安装")
             print("        [02] sudo")
-            print("        [03] 更换清华源")
-            print("        [04] 恢复官方源")
+            print("        [03] gcc")
+            print("        [04] 更换清华源")
+            print("        [05] 恢复官方源")
             print("        [00] 返回\n")
             e = input("tools > ")
             if e.strip() == "01" or e.strip() == "1": jichu()
             elif e.strip() == "02" or e.strip() == "2": sudo()
             elif e.strip() == "03" or e.strip() == "3": qhy()
-            elif e.strip() == "04" or e.strip() == "4": gfy()
+            elif e.strip() == "04" or e.strip() == "4": qhy()
+            elif e.strip() == "05" or e.strip() == "5": gfy()
             elif e.strip() == "00" or e.strip() == "0": restart()
             else:
                 print("\nERROR: 输入错误")
@@ -97,7 +99,7 @@ def main():
                 restart()
     elif a.strip() == "10":
         sys.exit()
-    
+    elif a.strip() == "update": update()
     else:
         print("\nERROR: 输入错误")
         timeout(2)

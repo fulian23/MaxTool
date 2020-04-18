@@ -26,7 +26,21 @@ def nmap():
     print('###### Done')
     print("###### Type 'nmap' to start.")
     restart()
-    
+
+def gcc():
+    print('\n######installing######')
+    print("apt install gcc")
+    print('###### Done ######')
+
+def update():
+    print("\n更新中，请稍候...\n")
+    pwd = os.getcwd()
+    os.system("cd %s" %pwd)
+    os.system("git stash && git pull origin master")
+    os.system("cd ~")
+    print("\n更新完成!\n")
+    restart()
+
 def sqlmap():
     print('\n###### Installing sqlmap')
     os.system('apt update && apt upgrade')
