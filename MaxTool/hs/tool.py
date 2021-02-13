@@ -12,7 +12,10 @@ maxtool_banner = """
        BY：fulian23
 """
 
-
+def restart():
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
+    curdir = os.getcwd()
 def banner():
     print(maxtool_banner)
 
