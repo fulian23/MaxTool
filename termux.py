@@ -33,5 +33,5 @@ a=input("是否更换键盘布局(Y/n)")
 if a.strip() == "N" or a.strip() == "n":
     pass
 else:
-    os.system("cd $HOME&& mkdir .termux>/dev/null 2>&1; echo \"extra-keys = [['ESC',':',';','=','(',')','[','$',']'],['TAB','|','/','~','*','HOME','UP','END','PGUP'],['CTRL','ALT','_','–','ENTER','LEFT','DOWN','RIGHT','PGDN']]\">.termux/termux.properties;termux-reload-settings")
+    os.system("cd $HOME&& mkdir .termux>/dev/null 2>&1; echo \"extra-keys = [['ESC',':',';','=','(',')','[','$',']'],['TAB','|','/','~','*','HOME','UP','END','PGUP'],['CTRL','ALT','_','-','ENTER','LEFT','DOWN','RIGHT','PGDN']]\">.termux/termux.properties;termux-reload-settings")
     print("完成！")
